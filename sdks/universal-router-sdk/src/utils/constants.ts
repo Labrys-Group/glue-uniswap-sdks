@@ -307,6 +307,20 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
   },
+  // Glue Devnet
+  [1298]: {
+    weth: '0x7403b6547F721523653b2309ACca69B42C39604a',
+    routerConfigs: {
+      [UniversalRouterVersion.V1_2]: {
+        address: '0xBB48E2d33A397094DE6587D649A251FBBB6658dA',
+        creationBlock: 64638,
+      },
+      [UniversalRouterVersion.V2_0]: {
+        address: '0xBB48E2d33A397094DE6587D649A251FBBB6658dA',
+        creationBlock: 64638,
+      },
+    },
+  },
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (version: UniversalRouterVersion, chainId: number): string => {
