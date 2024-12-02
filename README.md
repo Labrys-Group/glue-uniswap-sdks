@@ -1,23 +1,37 @@
 # Uniswap SDK's
 
 A repository for many Uniswap SDK's. All SDK's can be found in `sdk/` and have more information in their individual README's.
+This is a fork of [sdks](https://github.com/Uniswap/sdks) that includes the configuration for Glue Devnet, Testnet, Mainnet. Eventually this could be PRed back into the main Uniswap repository to have official support for Glue Network
 
 ## Development Commands
 
 ```markdown
 # Clone
+
 git clone --recurse-submodules https://github.com/Uniswap/sdks.git
+
 # Install
+
 yarn
+
 # Build
+
 yarn g:build
+
 # Typecheck
+
 yarn g:typecheck
+
 # Lint
+
 yarn g:lint
+
 # Test
+
 yarn g:test
+
 # Run a specific package.json command for an individual SDK
+
 yarn sdk @uniswap/{sdk-name} {command}
 ```
 

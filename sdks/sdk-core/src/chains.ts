@@ -26,6 +26,9 @@ export enum ChainId {
   WORLDCHAIN = 480,
   UNICHAIN_SEPOLIA = 1301,
   UNICHAIN = 130,
+  GLUE_DEVNET = 1298,
+  GLUE_TESTNET = 1299,
+  GLUE_MAINNET = 1300,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -54,6 +57,9 @@ export const SUPPORTED_CHAINS = [
   ChainId.WORLDCHAIN,
   ChainId.UNICHAIN_SEPOLIA,
   ChainId.UNICHAIN,
+  ChainId.GLUE_DEVNET,
+  ChainId.GLUE_TESTNET,
+  ChainId.GLUE_MAINNET,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -67,4 +73,5 @@ export enum NativeCurrencyName {
   BNB = 'BNB',
   AVAX = 'AVAX',
   ROOTSTOCK = 'RBTC',
+  GLUE = 'GLUE',
 }

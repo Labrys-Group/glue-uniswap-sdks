@@ -304,6 +304,28 @@ const UNICHAIN_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x73855d06de49d0fe4a9c42636ba96c62da12ff9c',
 }
 
+const GLUE_DEVNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x0333A9df9F07060dbcf072Ff4dFa573aB41C97fe',
+  multicallAddress: '0xdA511e485D22F9b6932BcaBB818D92cF54Ff7a47',
+  quoterAddress: '0xC18f1FAd7ec8509E228d297EFee5fB582DdD6313',
+  v3MigratorAddress: '0xe2328c9Fe76CC8F57b7EACEb5E25B191a2210bAf',
+  nonfungiblePositionManagerAddress: '0x49d19a446953FF96Bacb83640Da4AbFcDA86D8DF',
+  tickLensAddress: '0x2307a020145e79c42B50eb6Ecf3Eef14484f529e',
+  swapRouter02Address: '0x94F4B3Da5ab7fb78c9412999c0f8CAfeeCef347D',
+}
+
+const GLUE_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '',
+  multicallAddress: '',
+  quoterAddress: '',
+}
+
+const GLUE_MAINNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '',
+  multicallAddress: '',
+  quoterAddress: '',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -330,6 +352,9 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.WORLDCHAIN]: WORLDCHAIN_ADDRESSES,
   [ChainId.UNICHAIN_SEPOLIA]: UNICHAIN_SEPOLIA_ADDRESSES,
   [ChainId.UNICHAIN]: UNICHAIN_ADDRESSES,
+  [ChainId.GLUE_DEVNET]: GLUE_DEVNET_ADDRESSES,
+  [ChainId.GLUE_TESTNET]: GLUE_TESTNET_ADDRESSES,
+  [ChainId.GLUE_MAINNET]: GLUE_MAINNET_ADDRESSES,
 }
 
 /* V3 Contract Addresses */

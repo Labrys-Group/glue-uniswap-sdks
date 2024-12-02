@@ -30,4 +30,9 @@ export const WETH9: { [chainId: number]: Token } = {
   480: new Token(480, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether'),
   1301: new Token(1301, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether'),
   130: new Token(130, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether'),
+
+  // Glue Networks
+  1298: new Token(1298, '0x5FbDB2315678afecb367f032d93F642f64180aa3', 18, 'WGLUE', 'Wrapped Glue'),
+  // 1299: new Token(1299, '', 18, 'WGLUE', 'Wrapped Glue'),
+  // 1300: new Token(1300, '', 18, 'WGLUE', 'Wrapped Glue'),
 }
