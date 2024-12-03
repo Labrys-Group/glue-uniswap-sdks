@@ -16,6 +16,8 @@ export {
   ROUTER_AS_RECIPIENT,
   WETH_ADDRESS,
   UniversalRouterVersion,
+  PERMIT2_ADDRESS,
+  PERMIT2_DEFAULT_ADDRESS,
 } from './utils/constants'
 export {
   CommandParser,

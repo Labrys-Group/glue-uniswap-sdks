@@ -13,6 +13,7 @@ export type RouterConfig = {
 type ChainConfig = {
   weth: string
   routerConfigs: { [key in UniversalRouterVersion]: RouterConfig }
+  permit2?: string
 }
 
 const WETH_NOT_SUPPORTED_ON_CHAIN = '0x0000000000000000000000000000000000000000'
@@ -320,6 +321,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
         creationBlock: 64638,
       },
     },
+    permit2: '0xBB48E2d33A397094DE6587D649A251FBBB6658dA',
   },
 }
 
@@ -350,3 +352,9 @@ export const MAX_UINT160 = BigNumber.from(2).pow(160).sub(1)
 
 export const SENDER_AS_RECIPIENT = '0x0000000000000000000000000000000000000001'
 export const ROUTER_AS_RECIPIENT = '0x0000000000000000000000000000000000000002'
+
+export const PERMIT2_DEFAULT_ADDRESS = '0x000000000022D473030F116dDEE9F6B43aC78BA3'
+
+export const PERMIT2_ADDRESS = (chainId: number): string => {
+  return CHAIN_CONFIGS[chainId].permit2 ?? PERMIT2_DEFAULT_ADDRESS
+}
